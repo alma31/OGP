@@ -15,15 +15,15 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'nom', 'prenom', 'age','cp','ville','email','tel','nht','nhr',
+    'nom', 'prenom', 'age','cp','ville','email','tel','nht','nhr'
     ];
+
+    public $timestamps = false;
+
 
     /**
      * The attributes that should be hidden for arrays.
      *
      * @var array
      */
-    // protected $hidden = [
-    //     'password', 'remember_token',
-    // ];
 }
