@@ -6,19 +6,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css">
 </head>
 <body>
-	<h1 style="text-align: center;">Clients</h1>
-	<h3 style="text-align: center;">Ajouter un client</h3>
+	<h1 style="text-align: center;">Liste clients</h1>
 	<form action="/products" method="POST">
 		{{csrf_field()}}
-		<label for="name">Nom</label>
-		<input name="name" id="name" type="text">
-		<label for="description">Description</label>
-		<input name="description" id="description" type="text">
-		<label for="price">Prix</label>
-		<input name="price" id="price" type="number">
-		<label for="stock">Quantiter</label>
-		<input name="stock" id="stock" type="number">
-		<input class="ui button" value="Ajouter client" type="submit">
+		<input class="ui button" value="Ajouter un client" type="submit">
 	</form>
 	<table class='ui inverted olive table'>
 		<th>Nom</th>
@@ -39,9 +30,29 @@
 				{{$users->prenom}}
 
 			</td>
+			<td>
+				{{$users->age}}
+			</td>
+			<td>
+				{{$users->cp}}
+			</td>
+			<td>
+				{{$users->ville}}
+			</td>
+			<td>
+				{{$users->email}}
+			</td>
+			<td>
+				{{$users->tel}}
+			</td>
+			<td>
+				{{$users->nhr}}
+			</td>
+			<td>
+				{{$users->nht}}
+			</td>
 			@endforeach
 		</tr>
 	</table>
-
 </body>
 </html>

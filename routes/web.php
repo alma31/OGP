@@ -11,8 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('view');
-});
 Route::get('/', 'UserController@getUsers');
 
