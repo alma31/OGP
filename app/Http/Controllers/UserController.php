@@ -18,7 +18,14 @@ class UserController extends Controller
 	}
 
 	public function postAdd(Request $request){
-		User::create($request->all());
-		return redirect()->action('UserController@getUsers');
+		$nom = $request->nom;
+		$prenom = $request->prenom;
+		if (empty($nom)) {
+			echo "<script>alert(\"la variable est nulle\")</script>";
+			return view ('add'); 
+		}
+		else {
+			User::create($request->all());
+			return redirect()->action('UserController@getUsers');}
+		}
 	}
-}

@@ -9,16 +9,16 @@
 </head>
 <body>
 	<h1 style="text-align: center;">Ajouter un client</h1>
-	<form class="ui center olive form " action="/index" method="POST">
+	<form id="form" class="ui center olive form" action="/index" method="POST">
 		{{csrf_field()}}
 		<div class="field">
 			<label>Prenom/Nom</label>
 			<div class="two fields">
 				<div class="field">
-					<input type="text" name="nom" placeholder="Prenom">
+					<input type="text" name="nom"  placeholder="Prenom">
 				</div>
 				<div class="field">
-					<input type="text" name="prenom" placeholder="Nom">
+					<input type="text" name="prenom"  placeholder="Nom">
 				</div>
 			</div>
 		</div>
@@ -41,7 +41,7 @@
 				<input type="text" name="email" placeholder="Email">
 			</div>
 			<div class="field">
-				<input type="number" name="tel" placeholder="Telephone">
+				<input type="tel" name="tel" placeholder="Telephone">
 			</div>
 		</div>
 		<div class="field">
