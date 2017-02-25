@@ -18,10 +18,12 @@ class CreateUsersTable extends Migration
             $table->string('nom');
             $table->string('prenom');
             $table->integer('age');
+            $table->string('rue');
             $table->integer('cp');
             $table->string('ville');
             $table->string('email')->unique();
             $table->integer('tel');
+            $table->string('ffsnw');
             $table->integer('nht');
             $table->integer('nhr');
             $table->timestamps();

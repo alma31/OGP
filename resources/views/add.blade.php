@@ -21,6 +21,26 @@
 				</div>
 			</div>
 		</div>
+		<div class="three center wide field ">
+			<label>Sexe</label>
+			<select class="ui dropdown">
+				<option value="1">Homme</option>
+				<option value="0">Femme</option>
+			</select>
+			<label>Licence ffsnw</label>
+			<select class="ui dropdown">
+				<option value="2">Oui</option>
+				<option value="3">Non</option>
+			</select>
+		</div>
+		<div class="two fields">
+			<div class="field">
+				<input type="text" name="email" placeholder="Email">
+			</div>
+			<div class="field">
+				<input type="number" name="tel" placeholder="Telephone">
+			</div>
+		</div>
 		<div class="field">
 			<label>Adresse</label>
 			<div class="fields">
