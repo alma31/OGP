@@ -9,20 +9,21 @@
 </head>
 <body>
 	<h1 style="text-align: center;">Ajouter un client</h1>
-	<form id="form" class="ui center olive form" action="/index" method="POST">
+	<form id="form" class="ui center olive form" action="/" method="POST">
 		{{csrf_field()}}
 		<div class="field">
-			<label>Prenom/Nom</label>
+			<label>Prenom</label>
 			<div class="two fields">
 				<div class="field">
-					<input type="text" name="nom"  placeholder="Prenom">
+					<input id="nom" type="text" name="nom"  placeholder="Prenom">
 				</div>
 				<div class="field">
-					<input type="text" name="prenom"  placeholder="Nom">
+					<label>Nom</label>
+					<input id="prenom" type="text" name="prenom"  placeholder="Nom">
 				</div>
 			</div>
 		</div>
-		<div class="three center wide field ">
+		<div class="sixteen center wide field ">
 			<label>Sexe</label>
 			<select name="sexe" class="ui dropdown">
 				<option value="Homme">Homme</option>
@@ -38,9 +39,11 @@
 		</div>
 		<div class="two fields">
 			<div class="field">
+				<label>Email</label>
 				<input type="text" name="email" placeholder="Email">
 			</div>
 			<div class="field">
+				<label>Telephone</label>
 				<input type="tel" name="tel" placeholder="Telephone">
 			</div>
 		</div>
@@ -67,12 +70,15 @@
 				<input id="country" type="hidden" name="pays" placeholder="Pays">
 			</div>
 		</div>
-		<div class="two fields">
+		<div class="">
+		<input type="submit" class="ui center button" value="Ajouter">
 		</div>
-		<input type="submit" class="fluid ui button" placeholder="Ajouter">
 		<!-- input caher pour heure restante/total -->
 		<input type="hidden" name="nht" value="0">
 		<input type="hidden" name="nhr" value="0">
+	</form>
+	<form action="/" method="GET">
+		<input type="submit" class="ui button" value="Revenir a la liste">
 	</form>
 </body>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBJCldPjURFNVUUxV4Chce_gx9FAHZqMlI">
