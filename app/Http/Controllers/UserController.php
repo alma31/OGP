@@ -16,4 +16,9 @@ class UserController extends Controller
 	public function getAdd(){
 		return view ('add');
 	}
+
+	public function postAdd(Request $request){
+		User::create($request->all());
+		return redirect()->action('UserController@getUsers');
+	}
 }

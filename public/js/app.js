@@ -74,6 +74,7 @@ function initializeAutocomplete(id) {
 	var input = document.getElementById('user_input_autocomplete_address');
 	var options = {
 		types: ['geocode'],
+		postal_code: 'short_name',
 		componentRestrictions: { country: 'fr' }
 	};
 	var element = document.getElementById(id);
