@@ -9,23 +9,46 @@
 </head>
 <body>
 	<h1 style="text-align: center;">Ajouter un client</h1>
-
-	<form>
-		<label>Address</label>
-		<input id="user_input_autocomplete_address" placeholder="Votre adresse...">
-		<label>street_number</label>
-		<input id="street_number" name="street_number" disabled>
-		<label>route</label>
-		<input id="route" name="route" disabled>
-		<label>locality</label>
-		<input id="locality" name="locality" disabled>
-		<label>country</label>
-		<input id="country" name="country" disabled>
+	<form class="ui center olive form ">
+		<div class="field">
+			<label>Prenom/Nom</label>
+			<div class="two fields">
+				<div class="field">
+					<input type="text" name="Nom" placeholder="Prenom">
+				</div>
+				<div class="field">
+					<input type="text" name="Prenom" placeholder="Nom">
+				</div>
+			</div>
+		</div>
+		<div class="field">
+			<label>Adresse</label>
+			<div class="fields">
+				<div class="sixteen wide field">
+					<input id="user_input_autocomplete_address" type="text" name="shipping[address]" placeholder="Adresse">
+				</div>
+			</div>
+			<div class="four wide field">
+				<input id="street_number" type="text" name="street_number" disabled placeholder="Numero">
+			</div>
+			<div class="four wide field">
+				<input id="route" type="text" name="route" disabled placeholder="rue">
+			</div>
+			<div class="four wide field">
+				<input id="postal_code" type="text" name="postal_code" disabled placeholder="CP">
+			</div>
+			<div class="four wide field">
+				<input id="locality" type="text" name="locality" disabled placeholder="Ville">
+			</div>
+			<div class="four wide field">
+				<input id="country" type="text" name="country" disabled placeholder="Pays">
+			</div>
+		</div>
+		<div class="two fields">
+		</div>
+		<div class="fluid ui button" tabindex="0">Ajouter</div>
 	</form>
-
-
 </body>
-<!-- Include Google Maps JS API -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBJCldPjURFNVUUxV4Chce_gx9FAHZqMlI">
 </script>
 <script src="{{ mix('/js/app.js') }}"></script>
