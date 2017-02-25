@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Clients</title>
+	<meta name="csrf-token" content="{{csrf_token()}}">
+	<title>Listes Clients</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css">
 </head>
 <body>
-	<h1 style="text-align: center;">Liste clients</h1>
-	<form action="/products" method="POST">
+	<h1 style="text-align: center;">Liste des clients</h1>
+	<form action="/add" method="GET">
 		{{csrf_field()}}
 		<input class="ui button" value="Ajouter un client" type="submit">
 	</form>

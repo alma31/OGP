@@ -12,4 +12,8 @@ class UserController extends Controller
 		$user = User::all();
 		return view ('index', ['user' => $user]);
 	}
+
+	public function getAdd(){
+		return view ('add');
+	}
 }

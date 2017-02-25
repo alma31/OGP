@@ -12,4 +12,5 @@
 */
 
 Route::get('/', 'UserController@getUsers');
+Route::get('/add', 'UserController@getAdd');
 
