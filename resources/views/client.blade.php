@@ -20,22 +20,13 @@
 					@endif
 				</div>
 				<div class="content">
-					<div class="header">Matt Giampietro</div>
-					<div class="meta">
-						<a>Friends</a>
-					</div>
+					<div class="header">{{$user->nom}} {{$user->prenom}}</div>
 					<div class="description">
-						Matthew is an interior designer living in New York.
+						<strong>Information personnel</strong>
 					</div>
+						<span>Nom : {{$user->nom}}</span>
 				</div>
 				<div class="extra content">
-					<span class="right floated">
-						Joined in 2013
-					</span>
-					<span>
-						<i class="user icon"></i>
-						75 Friends
-					</span>
 				</div>
 			</div>
 		</div>

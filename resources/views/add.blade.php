@@ -15,11 +15,11 @@
 			<h2>Nom</h2>
 			<div class="two fields">
 				<div class="field">
-					<input id="nom" type="text" name="nom"  placeholder="Prenom">
+					<input id="nom" type="text" name="nom"  placeholder="Nom">
 				</div>
 				<div class="field">
 					<h2>Prenom</h2>
-					<input id="prenom" type="text" name="prenom"  placeholder="Nom">
+					<input id="prenom" type="text" name="prenom"  placeholder="Prenom">
 				</div>
 			</div>
 		</div>
