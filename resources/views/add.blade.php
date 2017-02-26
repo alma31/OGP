@@ -9,6 +9,10 @@
 </head>
 <body>
 	<h1 style="text-align: center;">Ajouter un client</h1>
+	<form action="/" method="GET">
+		<input type="submit" class="ui button" value="Revenir a la liste">
+	</form>
+	<hr>
 	<form id="form" class="ui center olive form" action="/" method="POST">
 		{{csrf_field()}}
 		<div class="field">
@@ -71,16 +75,13 @@
 			</div>
 		</div>
 		<div class="">
-		<input type="submit" class="ui center button" value="Ajouter">
+			<input type="submit" class="ui center button" value="Ajouter">
 		</div>
 		<!-- input caher pour heure restante/total -->
 		<input type="hidden" name="nht" value="0">
 		<input type="hidden" name="nhr" value="0">
 	</form>
 	<br>
-	<form action="/" method="GET">
-		<input type="submit" class="ui button" value="Revenir a la liste">
-	</form>
 </body>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBJCldPjURFNVUUxV4Chce_gx9FAHZqMlI">
 </script>

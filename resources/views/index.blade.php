@@ -9,6 +9,7 @@
 </head>
 <body>
 	<h1 style="text-align: center;">Liste des clients</h1>
+	<hr>
 	<form action="/add" method="GET">
 		{{csrf_field()}}
 		<input class="ui button" value="Ajouter un client" type="submit">
