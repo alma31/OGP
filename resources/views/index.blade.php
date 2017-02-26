@@ -25,32 +25,32 @@
 		@foreach ($user as $users)
 		<tr>
 			<td>
-				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->nom}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->nom}}</a>
 			</td>
 			<td>
-				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->prenom}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->prenom}}</a>
 
 			</td>
 			<td>
-				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->age}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->age}}</a>
 			</td>
 			<td>
-				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->cp}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->cp}}</a>
 			</td>
 			<td>
-				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->ville}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->ville}}</a>
 			</td>
 			<td>
-				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->email}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->email}}</a>
 			</td>
 			<td>
-				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->tel}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->tel}}</a>
 			</td>
 			<td>
-				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->nhr}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->nhr}}</a>
 			</td>
 			<td>
-				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->nht}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->nht}}</a>
 			</td>
 			@endforeach
 		</tr>

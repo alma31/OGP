@@ -29,46 +29,55 @@ class UserController extends Controller
 
 		if (empty($nom)) {
 			echo "<script>alert(\"Il manque un NOM\")</script>";
-	 
+
 		}
 
 		if (empty($prenom)) {
 			echo "<script>alert(\"Il manque un PRENOM\")</script>";
-	 
+
 		}
 
 		if (empty($numrue)) {
 			echo "<script>alert(\"Il manque un NUMERO DE RUE\")</script>";
-	 
+
 		}
 
 		if (empty($rue)) {
 			echo "<script>alert(\"Il manque une RUE\")</script>";
-		
+
 		}
 
 		if (empty($cp)) {
 			echo "<script>alert(\"Il manque un CODE POSTALE\")</script>";
-		
+
 		}
 
 		if (empty($ville)) {
 			echo "<script>alert(\"Il manque une VILLE\")</script>";
-		
+
 		}
 
 		if (empty($email)) {
 			echo "<script>alert(\"Il manque un EMAIL\")</script>";
-		
+
 		}
 
 		if (empty($tel)) {
 			echo "<script>alert(\"Il manque un numero de TELEPHONE\")</script>";
-	 
+
 		}
 
 		else {
 			User::create($request->all());
 			return redirect()->action('UserController@getUsers');}
 		}
+
+
+
+		public function getFiche($id){
+			$user = User::find($id);
+			return view ('client', ['user' => $user]);
+		}
 	}
+
+
