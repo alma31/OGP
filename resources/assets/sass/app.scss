@@ -15,3 +15,39 @@ body {
 	left: 5%;
 	top: 3em;
 }
+
+.four.column.centered.row {
+
+	position: absolute;
+	left:10%;
+	bottom: 50%;
+}
+
+.nhr {
+	position: relative;
+	color:red;
+	top:0.5em;
+	left:3.5em;
+
+}
+
+.nht {
+	position: relative;
+	top:0.5em;
+	left:3em;
+}
+
+.ffsnw {
+	position: relative;
+	top:0.5em;
+	left:3em;
+}
+
+.ui.massive.right.floated.segment:hover {
+
+	filter: brightness(70%);
+	-webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+}

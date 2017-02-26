@@ -38,10 +38,23 @@
 		</div>
 		<div class="four column centered row">
 			<div class="column">
+				<div class="ui massive right floated segment">
+					HEURE RESTANTE
+					<div class="nhr">{{$user->nhr}}</div>
+				</div>
 			</div>
 			<div class="column">
+				<div class="ui left floated segment">
+					HEURE TOTALE
+					<div class="nht">{{$user->nht}}</div>
+				</div>
+				<div class="ui massive floated segment">
+					LICENCE FFSNW
+					<div class="ffsnw">{{$user->ffsnw}}</div>
+				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </body>
 </html>
