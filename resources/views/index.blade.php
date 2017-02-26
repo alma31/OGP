@@ -5,6 +5,7 @@
 	<meta name="csrf-token" content="{{csrf_token()}}">
 	<title>Listes Clients</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css">
+	<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
 <body>
 	<h1 style="text-align: center;">Liste des clients</h1>
