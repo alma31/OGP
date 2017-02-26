@@ -19,15 +19,15 @@ body {
 .four.column.centered.row {
 
 	position: absolute;
-	left:10%;
-	bottom: 50%;
+	left:13em;
+	bottom: 27em;
 }
 
 .nhr {
 	position: relative;
 	color:red;
-	top:0.5em;
-	left:3.5em;
+	top:0.8em;
+	left:4.4em;
 
 }
 
@@ -43,11 +43,8 @@ body {
 	left:3em;
 }
 
-.ui.massive.right.floated.segment:hover {
-
-	filter: brightness(70%);
-	-webkit-filter: brightness(70%);
-	-moz-filter: brightness(70%);
-	-o-filter: brightness(70%);
-	-ms-filter: brightness(70%);
+.ui.add.button {
+	position: relative;
+	top:36em;
+	left:49em;
 }

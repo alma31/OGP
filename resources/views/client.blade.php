@@ -41,6 +41,8 @@
 				<div class="ui massive right floated segment">
 					HEURE RESTANTE
 					<div class="nhr">{{$user->nhr}}</div>
+					<br></br>
+		<button class="positive ui button">Payer une heure de wakeboard</button>
 				</div>
 			</div>
 			<div class="column">
@@ -54,6 +56,9 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="six wide tablet eight wide computer column">
+		<button class="ui add button">Ajouter des heures de wakeboard</button>
 	</div>
 </body>
 </html>
