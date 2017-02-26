@@ -25,32 +25,32 @@
 		@foreach ($user as $users)
 		<tr>
 			<td>
-				{{$users->nom}}
+				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->nom}}</a>
 			</td>
 			<td>
-				{{$users->prenom}}
+				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->prenom}}</a>
 
 			</td>
 			<td>
-				{{$users->age}}
+				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->age}}</a>
 			</td>
 			<td>
-				{{$users->cp}}
+				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->cp}}</a>
 			</td>
 			<td>
-				{{$users->ville}}
+				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->ville}}</a>
 			</td>
 			<td>
-				{{$users->email}}
+				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->email}}</a>
 			</td>
 			<td>
-				{{$users->tel}}
+				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->tel}}</a>
 			</td>
 			<td>
-				{{$users->nhr}}
+				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->nhr}}</a>
 			</td>
 			<td>
-				{{$users->nht}}
+				<a href="..." style="color:white;display:block;width:100%;height:100%;">{{$users->nht}}</a>
 			</td>
 			@endforeach
 		</tr>
