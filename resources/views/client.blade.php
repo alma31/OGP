@@ -8,10 +8,10 @@
 	<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
 <body>
-	<h1 style="text-align: center;">Fiche de {{$user->nom}}  {{$user->prenom}} </h1>
-	<div class="ui two column centered grid">
+	<h1 style="text-align: center;">Fiche client<div>{{$user->nom}}  {{$user->prenom}}</div></h1>
+	<div class="ui one column centered grid">
 		<div class="column">
-			<div class="ui centered card">
+			<div class="ui card">
 				<div class="image">
 					@if ($user->sexe == "Homme")
 					<img src="http://semantic-ui.com/images/avatar2/small/matthew.png">
@@ -21,12 +21,13 @@
 				</div>
 				<div class="content">
 					<div class="header">{{$user->nom}} {{$user->prenom}}</div>
-					<div class="description">
-						<strong>Information personnel</strong>
-					</div>
-						<span>Nom : {{$user->nom}}</span>
-				</div>
-				<div class="extra content">
+					<strong>Information personnel</strong>
+					<div>Nom : {{$user->nom}}</div>
+					<div>Prenom : {{$user->prenom}}</div>
+					<div>Age : {{$user->age}} ans</div>
+					<strong>Adresse</strong>
+					<div>{{$user->numrue}} {{$user->rue}}</div>
+					<div>{{$user->cp}} {{$user->ville}}</div>
 				</div>
 			</div>
 		</div>

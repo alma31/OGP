@@ -4,3 +4,14 @@
 
 // Variables
 @import "variables";
+
+body {
+
+	background-color:white;
+}
+
+.ui.card {
+	position: absolute;
+	left: 5%;
+	top: 2em;
+}
