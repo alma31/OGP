@@ -58,7 +58,7 @@
 		</div>
 	</div>
 	<div class="six wide tablet eight wide computer column">
-		<button class="ui add button">Ajouter des heures de wakeboard</button>
+		<button class="ui add button">Acheter des heures de wakeboard</button>
 	</div>
 </body>
 </html>
