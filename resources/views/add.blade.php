@@ -48,17 +48,17 @@
 		<div class="two fields">
 			<div class="three wide field">
 				<h2>Email</h2>
-				<input type="text" name="email" placeholder="Email" required="">
+				<input id="email" type="text" name="email" placeholder="Email" required="">
 			</div>
 			<div class="three wide field">
 				<h2>Telephone</h2>
-				<input type="tel" name="tel" placeholder="Telephone" required="">
+				<input type="tel" name="tel" placeholder="Telephone" required="" maxlength=10 pattern="^0[1-7]\d{8}$" required title="Tapez dans ce champ 0 (suivi immédiatement d'un chiffre entre 0 et 7)">
 			</div>
 		</div>
 		<div class="two fields">
 			<div class="one wide field">
 				<h2>N°</h2>
-				<input id="numrue" type="text" name="numrue" placeholder="Numero" required="">
+				<input id="numrue" type="number" name="numrue" placeholder="Numero" required="">
 			</div>
 			<div class="five wide field">
 				<h2>Rue</h2>
