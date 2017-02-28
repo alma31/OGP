@@ -36,8 +36,8 @@
 			<div class="two wide field">
 				<h2>Licence ffsnw</h2>
 				<select name="ffsnw" class="ui dropdown">
-					<option value="Oui">Oui</option>
 					<option value="Non">Non</option>
+					<option value="Oui">Oui</option>
 				</select>
 			</div>
 			<div class="two wide field">
@@ -52,7 +52,7 @@
 			</div>
 			<div class="three wide field">
 				<h2>Telephone</h2>
-				<input type="tel" name="tel" placeholder="Telephone" required="" maxlength=10 pattern="^0[1-7]\d{8}$" required title="Tapez dans ce champ 0 (suivi immédiatement d'un chiffre entre 0 et 7)">
+				<input type="text" name="tel" placeholder="Telephone" required="" maxlength=10 pattern="^0[1-7]\d{8}$" required title="Tapez dans ce champ 0 (suivi immédiatement d'un chiffre entre 0 et 7)">
 			</div>
 		</div>
 		<div class="two fields">
