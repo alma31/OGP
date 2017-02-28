@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
 <body>
-	<h1 class="header" style="text-align: center;">Fiche client {{$user->nom}}  {{$user->prenom}}</h1>
+	<h1 class="header" style="text-align: center;">Fiche client {{$user->prenom}}  {{$user->nom}}</h1>
 	<form action="/" method="GET">
 		<input type="submit" class="ui button" value="Revenir a la liste">
 	</form>

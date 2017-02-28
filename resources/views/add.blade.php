@@ -52,7 +52,7 @@
 			</div>
 			<div class="three wide field">
 				<h2>Telephone</h2>
-				<input type="text" name="tel" placeholder="Telephone" required="" maxlength=10 pattern="^0[1-7]\d{8}$" required title="Tapez dans ce champ 0 (suivi immédiatement d'un chiffre entre 0 et 7)">
+				<input type="text" name="tel" placeholder="Telephone" required="" maxlength=10 pattern="^0[1-7]\d{8}$" required title="Tapez dans ce champ 0 (suivi d'un chiffre entre 0 et 7)">
 			</div>
 		</div>
 		<div class="two fields">
