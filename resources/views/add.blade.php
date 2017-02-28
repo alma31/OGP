@@ -19,11 +19,11 @@
 			<div class="two fields">
 				<div class="three wide field">
 					<h2>Nom</h2>
-					<input type="text" name="nom" placeholder="Nom">
+					<input type="text" name="nom" placeholder="Nom" required="">
 				</div>
 				<div class="three wide field">
 					<h2>Prenom</h2>
-					<input type="tel" name="prenom" placeholder="Prenom">
+					<input type="tel" name="prenom" placeholder="Prenom" required="">
 				</div>
 			</div>
 			<div class="two wide fields ">
@@ -49,20 +49,21 @@
 			<div class="two fields">
 				<div class="three wide field">
 					<h2>Email</h2>
-					<input type="text" name="email" placeholder="Email">
+					<input type="text" name="email" placeholder="Email" required="">
 				</div>
 				<div class="three wide field">
 					<h2>Telephone</h2>
-					<input type="tel" name="tel" placeholder="Telephone">
+					<input type="tel" name="tel" placeholder="Telephone" required="">
 				</div>
 			</div>
 			<div class="six wide field">
-				<h2>Adresse numero de rue OBLIGATOIRE</h2>
+				<h2>Adresse, numero de rue OBLIGATOIRE</h2>
 				<div class="fields">
 					<div class="sixteen wide field">
-						<input id="user_input_autocomplete_address" type="text" name="Adresse" placeholder="Adresse">
+						<input id="user_input_autocomplete_address" type="text" name="Adresse" placeholder="Adresse" required="">
 					</div>
 				</div>
+				<!-- input de type cacher pour google -->
 				<div class="four wide field">
 					<input id="street_number" type="hidden" name="numrue" placeholder="Numero">
 				</div>
@@ -80,9 +81,9 @@
 				</div>
 			</div>
 			<div class="">
-				<input type="submit" class="ui centered button" value="Ajouter">
 			</div>
 			<!-- input caher pour heure restante/total -->
+			<input id="btn" type="submit" class="ui centered button" value="Ajouter">
 			<input type="hidden" name="nht" value="0">
 			<input type="hidden" name="nhr" value="0">
 		</form>
