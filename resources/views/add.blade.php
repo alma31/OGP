@@ -48,8 +48,9 @@
 		<div class="two fields">
 			<div class="three wide field">
 				<h2>Email</h2>
-				<input id="email" type="text" name="email" placeholder="Email" required="">
+				<input id="email" type="text" name="email" placeholder="Email" required="" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required title="Email non valide">
 			</div>
+			<h2 id='result'></h2>
 			<div class="three wide field">
 				<h2>Telephone</h2>
 				<input type="text" name="tel" placeholder="Telephone" required="" maxlength=10 pattern="^0[1-7]\d{8}$" required title="Tapez dans ce champ 0 (suivi d'un chiffre entre 0 et 7)">
