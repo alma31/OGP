@@ -57,12 +57,12 @@
 		</div>
 		<div class="two fields">
 			<div class="one wide field">
-				<h2>Rue</h2>
+				<h2>N°</h2>
 				<input id="numrue" type="text" name="numrue" placeholder="Numero" required="">
 			</div>
 			<div class="five wide field">
-				<h2>Adresse</h2>
-				<input id="user_input_autocomplete_address" type="text" name="Adresse" placeholder="Adresse" required="">
+				<h2>Rue</h2>
+				<input id="user_input_autocomplete_address" type="text" name="Adresse" placeholder="Rue" required="">
 			</div>
 		</div>
 		<!-- input de type cacher pour google -->
