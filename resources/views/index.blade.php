@@ -15,45 +15,36 @@
 	</form>
 	<hr>
 	<br>
-	<table class='ui inverted olive table'>
-		<th>Nom</th>
-		<th>Prenom</th>
-		<th>age</th>
-		<th>CP</th>
-		<th>Ville</th>
-		<th>Email</th>
-		<th>Telephone</th>
-		<th>Heure Restant</th>
-		<th>Heure Totale</th>
+	<table class="ui striped table">
+		<thead>
+			<tr>
+				<th>Nom</th>
+				<th>Prenom</th>
+				<th>Email</th>
+				<th>Telephone</th>
+				<th>Code postale</th>
+				<th>Licence ffsnw</th>
+			</tr>
+		</thead>
 		@foreach ($user as $users)
 		<tr>
 			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->nom}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->nom}}</a>
 			</td>
 			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->prenom}}</a>
-
+				<a href="/client/fiche{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->prenom}}</a>
 			</td>
 			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->age}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->email}}</a>
 			</td>
 			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->cp}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->tel}}</a>
 			</td>
 			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->ville}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->cp}}</a>
 			</td>
 			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->email}}</a>
-			</td>
-			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->tel}}</a>
-			</td>
-			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->nhr}}</a>
-			</td>
-			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:white;display:block;width:100%;height:100%;">{{$users->nht}}</a>
+				<a href="/client/fiche{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->ffsnw}}</a>
 			</td>
 			@endforeach
 		</tr>

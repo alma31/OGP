@@ -27,7 +27,6 @@ class UserController extends Controller
 		$ville = $request->ville;
 		$email = $request->email;
 		$tel = $request->tel;
-		$email = $request->input('email');
 		User::create($request->all());
 		return redirect()->action('UserController@getUsers');
 	}
