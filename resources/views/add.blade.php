@@ -61,14 +61,17 @@
 				<h2>N°</h2>
 				<input id="numrue" type="number" name="numrue" placeholder="Numero" required="">
 			</div>
-			<div class="five wide field">
+			<div class="four wide field">
 				<h2>Rue</h2>
 				<input id="user_input_autocomplete_address" type="text" name="Adresse" placeholder="Rue" required="">
+			</div>
+			<div class="one wide field">
+				<h2>CP</h2>
+				<input id="postal_code" type="text" name="cp" placeholder="CP" required="">
 			</div>
 		</div>
 		<!-- input de type cacher pour google -->
 		<input id="route" type="hidden" name="rue" placeholder="rue">
-		<input id="postal_code" type="hidden" name="cp" placeholder="CP">
 		<input id="locality" type="hidden" name="ville" placeholder="Ville">
 		<input id="country" type="hidden" name="pays" placeholder="Pays">
 		<!-- input caher pour heure restante/total -->
