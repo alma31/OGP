@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
 <body>
-	<h1 class="header" style="text-align: center;">Fiche client {{$user->prenom}}  {{$user->nom}}</h1>
+	<h1 class="header" style="text-align: center;">Fiche client de {{$user->prenom}}  {{$user->nom}}</h1>
 	<form action="/" method="GET">
 		<input type="submit" class="ui button" value="Revenir a la liste">
 	</form>
@@ -42,7 +42,7 @@
 					HEURE RESTANTE
 					<div class="nhr">{{$user->nhr}}</div>
 					<br></br>
-		<button class="positive ui button">Payer une heure de wakeboard</button>
+					<button class="positive ui button">Payer une heure de wakeboard</button>
 				</div>
 			</div>
 			<div class="column">
