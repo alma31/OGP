@@ -19,14 +19,9 @@ class UserController extends Controller
 	}
 
 	public function postAdd(Request $request){
-		$nom = $request->nom;
-		$prenom = $request->prenom;
-		$numrue = $request->numrue;
-		$rue = $request->rue;
-		$cp = $request->cp;
-		$ville = $request->ville;
-		$email = $request->email;
-		$tel = $request->tel;
+		$prenom = ucfirst(strtolower($request->prenom));
+		$nom = ucfirst(strtolower($request->nom));
+		$request->request->add(['nom' => $nom, 'prenom' => $prenom]);
 		User::create($request->all());
 		return redirect()->action('UserController@getUsers');
 	}
