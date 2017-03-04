@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="csrf-token" content="{{csrf_token()}}">
 	<title>Listes Clients</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css">
+	<link rel="stylesheet" href="/css/semantic.css">
 	<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
 <body>
@@ -22,7 +22,7 @@
 				<th>Prenom</th>
 				<th>Email</th>
 				<th>Telephone</th>
-				<th>Code postale</th>
+				<th>Code postal</th>
 				<th>Licence ffsnw</th>
 			</tr>
 		</thead>

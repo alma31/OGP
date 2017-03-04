@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="csrf-token" content="{{csrf_token()}}">
 	<title>Ajouter un client</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css">
+	<link rel="stylesheet" href="/css/semantic.css">
 	<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
 <body>

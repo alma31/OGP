@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="csrf-token" content="{{csrf_token()}}">
 	<title>Fiche client</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css">
+	<link rel="stylesheet" href="/css/semantic.css">
 	<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
 <body>
@@ -18,9 +18,9 @@
 			<div class="ui card">
 				<div class="image">
 					@if ($user->sexe == "Homme")
-					<img src="http://semantic-ui.com/images/avatar2/small/matthew.png">
+					<img src="/images/matthew.png">
 					@else 
-					<img src="http://semantic-ui.com/images/avatar2/small/molly.png">
+					<img src="/images/molly.png">
 					@endif
 				</div>
 				<div class="content">
