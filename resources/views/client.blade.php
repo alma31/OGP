@@ -24,7 +24,6 @@
 					@endif
 				</div>
 				<div class="content">
-					<div class="information">{{$user->nom}} {{$user->prenom}}</div>
 					<strong>Information personnel</strong>
 					<div>Nom : {{$user->nom}}</div>
 					<div>Prenom : {{$user->prenom}}</div>

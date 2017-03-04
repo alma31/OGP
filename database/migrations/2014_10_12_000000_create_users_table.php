@@ -17,14 +17,14 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('nom');
             $table->string('prenom');
-            $table->integer('age');
+            $table->string('age');
             $table->string('sexe');
-            $table->integer('numrue');
+            $table->string('numrue');
             $table->string('rue');
-            $table->integer('cp');
+            $table->string('cp');
             $table->string('ville');
             $table->string('email')->unique();
-            $table->integer('tel');
+            $table->string('tel');
             $table->string('ffsnw');
             $table->integer('nht');
             $table->integer('nhr');
