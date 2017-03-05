@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="csrf-token" content="{{csrf_token()}}">
-	<title>Listes Clients</title>
+	<title>Liste des Clients</title>
 	<link rel="stylesheet" href="/css/semantic.css">
 	<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
