@@ -11,6 +11,13 @@ body {
 	margin: 0;
 }
 
+.circular.ui.large.icon.button {
+
+	background-color:#ec2b2b;
+	float:right;
+	margin-top:1em;
+}
+
 
 .ui.card {
 	position: absolute;
@@ -21,8 +28,8 @@ body {
 .four.column.centered.row {
 
 	position: absolute;
-	left:13em;
-	bottom: 27em;
+	left:5%;
+	bottom: 40%;
 }
 
 .nhr {
@@ -43,12 +50,6 @@ body {
 	position: relative;
 	top:0.5em;
 	left:3em;
-}
-
-.ui.add.button {
-	position: relative;
-	top:36em;
-	left:49em;
 }
 
 .form {

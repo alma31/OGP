@@ -13,6 +13,9 @@
 		<input type="submit" class="ui button" value="Revenir a la liste">
 	</form>
 	<hr>
+	<button class="circular ui large icon button">
+		<i class="">supprimer ce compte</i>
+	</button>
 	<div class="ui one column centered grid">
 		<div class="column">
 			<div class="ui card">
@@ -53,11 +56,9 @@
 					LICENCE FFSNW
 					<div class="ffsnw">{{$user->ffsnw}}</div>
 				</div>
+				<button class="ui add button">Acheter des heures de wakeboard</button>
 			</div>
 		</div>
-	</div>
-	<div class="six wide tablet eight wide computer column">
-		<button class="ui add button">Acheter des heures de wakeboard</button>
 	</div>
 </body>
 </html>
