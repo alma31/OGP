@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="UTF-8">
 	<meta name="csrf-token" content="{{csrf_token()}}">
@@ -22,7 +22,7 @@
 			</div>
 			<div class="three wide field">
 				<h2>Prenom</h2>
-				<input type="tel" name="prenom" placeholder="Prenom" required="">
+				<input type="text" name="prenom" placeholder="Prenom" required="">
 			</div>
 		</div>
 		<div class="two wide fields ">
