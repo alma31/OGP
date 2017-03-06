@@ -14,5 +14,5 @@
 Route::get('/', 'UserController@getUsers');
 Route::get('/add', 'UserController@getAdd');
 Route::post('/' , 'UserController@postAdd');
-Route::get('/client/fiche{id}', 'UserController@getFiche');
-
+Route::get('/client/fiche/{id}', 'UserController@getFiche');
+Route::post('/client/fiche/btndelete/{id}', 'UserController@btndelete');

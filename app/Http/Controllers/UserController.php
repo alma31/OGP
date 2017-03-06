@@ -26,12 +26,16 @@ class UserController extends Controller
 		return redirect()->action('UserController@getUsers');
 	}
 
-
-
 	public function getFiche($id){
 		$user = User::find($id);
 		return view ('client', ['user' => $user]);
 	}
+
+	public function btndelete(Request $request, $id){
+		$user = User::find($request->id);
+		$user->delete();
+	}
+
 }
 
 

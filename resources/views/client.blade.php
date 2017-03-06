@@ -5,6 +5,7 @@
 	<meta name="csrf-token" content="{{csrf_token()}}">
 	<title>Fiche client</title>
 	<link rel="stylesheet" href="/css/semantic.css">
+	<link rel="stylesheet" type="text/css" href="/css/sweetalert.css">
 	<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
 <body>
@@ -13,9 +14,8 @@
 		<input type="submit" class="ui button" value="Revenir a la liste">
 	</form>
 	<hr>
-	<button class="circular ui large icon button">
-		<i class="">supprimer ce compte</i>
-	</button>
+	<button id="btndelete" data-id="{{ $user->id }}" data-token="{{ csrf_token() }}" class="negative ui button" value="supprimer"></button>
+	
 	<div class="ui one column centered grid">
 		<div class="column">
 			<div class="ui card">
@@ -60,5 +60,7 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="{{ mix('/js/app.js') }}"></script>
+	<script src="/js/sweetalert.min.js"></script>
 </body>
 </html>

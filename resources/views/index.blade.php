@@ -29,22 +29,22 @@
 		@foreach ($user as $users)
 		<tr>
 			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->nom}}</a>
+				<a href="/client/fiche/{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->nom}}</a>
 			</td>
 			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->prenom}}</a>
+				<a href="/client/fiche/{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->prenom}}</a>
 			</td>
 			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->email}}</a>
+				<a href="/client/fiche/{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->email}}</a>
 			</td>
 			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->tel}}</a>
+				<a href="/client/fiche/{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->tel}}</a>
 			</td>
 			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->cp}}</a>
+				<a href="/client/fiche/{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->cp}}</a>
 			</td>
 			<td>
-				<a href="/client/fiche{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->ffsnw}}</a>
+				<a href="/client/fiche/{{$users->id}}" style="color:black;display:block;width:100%;height:100%;">{{$users->ffsnw}}</a>
 			</td>
 			@endforeach
 		</tr>
