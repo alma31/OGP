@@ -14,7 +14,7 @@
 		<input type="submit" class="ui button" value="Revenir a la liste">
 	</form>
 	<hr>
-	<button id="btndelete" data-id="{{ $user->id }}" data-token="{{ csrf_token() }}" class="negative ui button" value="supprimer"></button>
+	<button id="btndelete" data-id="{{ $user->id }}" data-token="{{ csrf_token() }}" class="negative ui button" value="supprimer">Supprimer ce compte</button>
 	
 	<div class="ui one column centered grid">
 		<div class="column">

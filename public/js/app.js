@@ -112,13 +112,13 @@ $(document).ready(function () {
 		var token = $(this).data("token");
 		e.preventDefault();
 		swal({
-			title: "Are you sure?",
-			text: "You will not be able to recover this imaginary file!",
+			title: "Êtes-vous sûr ?",
+			text: "action irreversible",
 			type: "warning",
 			showCancelButton: true,
 			confirmButtonClass: "btn-danger",
-			confirmButtonText: "Yes, delete it!",
-			cancelButtonText: "No, cancel plx!",
+			confirmButtonText: "Oui, je suis sûr !",
+			cancelButtonText: "Non, je veux annuler !",
 			closeOnConfirm: false,
 			closeOnCancel: false
 		}, function (isConfirm) {
@@ -132,14 +132,14 @@ $(document).ready(function () {
 						"_token": token
 					},
 					success: function success() {
-						swal("Deleted!", "Your imaginary file has been deleted.", "success");
+						swal("Suppression ok", "Redirection dans deux secondes...", "success");
 						setTimeout(function () {
 							window.location.replace("/");
 						}, 1000);
 					}
 				});
 			} else {
-				swal("Cancelled", "Your imaginary file is safe :)", "error");
+				swal("Annuler", "Suppression annulé");
 			}
 		});
 	});
