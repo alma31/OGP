@@ -9,15 +9,16 @@
 	<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
 <body>
-	<h1 class="header" style="text-align: center;">Fiche client de {{$user->prenom}}  {{$user->nom}}</h1>
-	<form action="/" method="GET">
-		<input type="submit" class="ui button" value="Revenir a la liste">
-	</form>
-	<hr>
-	<button id="btndelete" data-id="{{ $user->id }}" data-token="{{ csrf_token() }}" class="negative ui button" value="supprimer">Supprimer ce compte</button>
-	
-	<div class="ui one column centered grid">
-		<div class="column">
+	<div class="ui grid">
+		<div class="sixteen wide column">
+			<h1 class="ui center aligned header">Fiche client de {{$user->prenom}}  {{$user->nom}}</h1>
+			<form action="/" method="GET">
+				<input type="submit" class="ui button" value="Revenir a la liste">
+			</form>
+			<button id="btndelete" data-id="{{ $user->id }}" data-token="{{ csrf_token() }}" class="negative ui right floated button" value="supprimer">Supprimer ce compte</button>
+			<div class="headerhr"></div>
+		</div>
+		<div class="sixteen wide column">
 			<div class="ui card">
 				<div class="image">
 					@if ($user->sexe == "Homme")
@@ -37,17 +38,12 @@
 				</div>
 				<button class="fluid ui button">Modifier les Informations Personnelles</button>
 			</div>
-		</div>
-		<div class="four column centered row">
-			<div class="column">
+			<div class="blok">
 				<div class="ui massive right floated segment">
 					HEURE RESTANTE
 					<div class="nhr">{{$user->nhr}}</div>
-					<br></br>
 					<button class="positive ui button">Payer une heure de wakeboard</button>
 				</div>
-			</div>
-			<div class="column">
 				<div class="ui left floated segment">
 					HEURE TOTALE
 					<div class="nht">{{$user->nht}}</div>
@@ -56,11 +52,12 @@
 					LICENCE FFSNW
 					<div class="ffsnw">{{$user->ffsnw}}</div>
 				</div>
-				<button class="ui add button">Acheter des heures de wakeboard</button>
+				<button class="fluid ui button">Acheter des heures de wakeboard</button>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="{{ mix('/js/app.js') }}"></script>
-	<script src="/js/sweetalert.min.js"></script>
 </body>
+<script type="text/javascript" src="{{ mix('/js/app.js') }}"></script>
+<script src="/js/sweetalert.min.js"></script>
 </html>
+

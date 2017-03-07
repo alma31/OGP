@@ -5,21 +5,47 @@ body {
   margin: 0;
 }
 
-.negative.ui.button {
-  float: right;
-  margin-top: 1em;
+.headerhr {
+
+  width: 100%;
+  background-color: #00838e;
+  height:2%;
+  margin-top: 1%;
 }
 
+.ui.center.aligned.header {
+
+  text-align: center;
+}
+
+.negative.ui.button {
+ 
+  margin-top: 2em;
+}
+
+
 .ui.card {
+  margin-left: 4%;
   position: absolute;
-  left: 5%;
-  top: 3em;
+}
+
+.blok {
+
+  height: 40%;
+  width:40%;
+  margin-left: 33%;
+  padding: 1%;
 }
 
 .four.column.centered.row {
   position: absolute;
   left: 5%;
   bottom: 40%;
+}
+
+.ui.massive.right.floated.segment {
+
+  height: 6.5em;
 }
 
 .nhr {
@@ -39,6 +65,14 @@ body {
   position: relative;
   top: 0.5em;
   left: 3em;
+}
+
+.positive.ui.button {
+
+  position: relative;
+  top: 2.5em;
+
+
 }
 
 .form {
