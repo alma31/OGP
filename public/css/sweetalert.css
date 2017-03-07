@@ -160,9 +160,6 @@ body.stop-scrolling {
       color: #bdbdbd; }
   .sweet-alert.show-input input {
     display: block; }
-  .sweet-alert .sa-confirm-button-container {
-    display: inline-block;
-    position: relative; }
   .sweet-alert .la-ball-fall {
     position: absolute;
     left: 50%;
@@ -172,7 +169,7 @@ body.stop-scrolling {
     opacity: 0;
     visibility: hidden; }
   .sweet-alert button {
-    background-color: #8CD4F5;
+    background-color: white;
     color: white;
     border: none;
     box-shadow: none;
@@ -201,18 +198,6 @@ body.stop-scrolling {
     .sweet-alert button[disabled] {
       opacity: .6;
       cursor: default; }
-    .sweet-alert button.confirm[disabled] {
-      color: transparent; }
-      .sweet-alert button.confirm[disabled] ~ .la-ball-fall {
-        opacity: 1;
-        visibility: visible;
-        transition-delay: 0s; }
-    .sweet-alert button::-moz-focus-inner {
-      border: 0; }
-  .sweet-alert[data-has-cancel-button=false] button {
-    box-shadow: none !important; }
-  .sweet-alert[data-has-confirm-button=false][data-has-cancel-button=false] {
-    padding-bottom: 40px; }
   .sweet-alert .sa-icon {
     width: 80px;
     height: 80px;

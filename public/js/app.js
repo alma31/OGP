@@ -132,10 +132,10 @@ $(document).ready(function () {
 						"_token": token
 					},
 					success: function success() {
-						swal("Suppression ok", "Redirection dans deux secondes...", "success");
-						setTimeout(function () {
+						swal("Suppression ok", "compte supprimer", "success");
+						$('.confirm').click(function () {
 							window.location.replace("/");
-						}, 1000);
+						});
 					}
 				});
 			} else {

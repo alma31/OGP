@@ -61,8 +61,10 @@ $(document).ready(function(){
 						"_token": token,
 					},
 					success : function(){
-						swal("Suppression ok", "Redirection dans deux secondes...", "success");
-						setTimeout(function () { window.location.replace("/"); }, 1000);
+						swal("Suppression ok", "compte supprimer", "success");
+						$('.confirm').click(function(){
+							window.location.replace("/")
+						});
 
 					}
 				});
