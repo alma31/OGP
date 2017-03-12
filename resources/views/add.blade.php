@@ -18,7 +18,7 @@
 		</div>
 	</div>
 	<div class="sixteen wide column">
-		<form id="form" class="ui center olive form" action="/" method="POST">
+		<form id="form" class="ui center olive form add" action="/" method="POST">
 			{{csrf_field()}}
 			<div class="two fields">
 				<div class="five wide field">
@@ -61,22 +61,27 @@
 					<input type="text" name="tel" placeholder="Telephone" required="" maxlength=10 pattern="^0[1-7]\d{8}$" required title="Tapez dans ce champ 0 (suivi d'un chiffre entre 0 et 7)">
 				</div>
 			</div>
-			<div class="two fields">
-				<div class="two wide field">
-					<h2>N°</h2>
-					<input id="numrue" type="number" name="numrue" placeholder="Numero" required="">
+			<div class="one field">
+				<div class="ten wide field">
+					<h2>Adresse complete</h2>
+					<input id="user_input_autocomplete_address" type="text" name="Adresse" placeholder="Adresse complete" required="">
 				</div>
-				<div class="six wide field">
-					<h2>Rue</h2>
-					<input id="user_input_autocomplete_address" type="text" name="Adresse" placeholder="Rue" required="">
-				</div>
-				<div class="two wide field">
-					<h2>CP</h2>
-					<input id="postal_code" type="text" name="cp" placeholder="CP" required="">
+				<div class="two wide fields">
+					<div class="two wide field">
+						<h2>N°</h2>
+						<input id="street_number" type="number" name="numrue" placeholder="Numero" required="">
+					</div>
+					<div class="five wide field">
+						<h2>Rue</h2>
+						<input id="route" type="text" name="rue" placeholder="rue" required="">
+					</div>
+					<div class="three wide field">
+						<h2>CP</h2>
+						<input id="postal_code" type="text" name="cp" placeholder="CP" required="" required="">
+					</div>
 				</div>
 			</div>
 			<!-- input de type cacher pour google -->
-			<input id="route" type="hidden" name="rue" placeholder="rue">
 			<input id="locality" type="hidden" name="ville" placeholder="Ville">
 			<input id="country" type="hidden" name="pays" placeholder="Pays">
 			<!-- input caher pour heure restante/total -->

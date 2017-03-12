@@ -36,6 +36,11 @@ class UserController extends Controller
 		$user->delete();
 	}
 
+	public function getClientModif($id){
+		$user = User::find($id);
+		return view ('clientModif', ['user' => $user]);
+	}
+
 }
 
 

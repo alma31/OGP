@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+body {
+  background-color: #F8F8FF;
+  margin: 0;
+}
+
+.headerhr {
+
+  width: 100%;
+  background-color: #00838e;
+  height:2%;
+  margin-top: 1%;
+}
+
+.ui.center.aligned.header {
+
+  text-align: center;
+}
+
+.negative.ui.button {
+
+  margin-top: 2em;
+}
+
+
+.ui.card {
+  margin-left: 4%;
+  position: absolute;
+}
+
+.blok {
+
+  height: 40%;
+  width:40%;
+  margin-left: 33%;
+  padding: 1%;
+}
+
+.four.column.centered.row {
+  position: absolute;
+  left: 5%;
+  bottom: 40%;
+}
+
+.ui.massive.right.floated.segment {
+
+  height: 6.5em;
+}
+
+.nhr {
+  position: relative;
+  color: red;
+  top: 0.8em;
+  left: 4.4em;
+}
+
+.nht {
+  position: relative;
+  top: 0.5em;
+  left: 3em;
+}
+
+.ffsnw {
+  position: relative;
+  top: 0.5em;
+  left: 3em;
+}
+
+.positive.ui.button {
+  position: relative;
+  top: 2.5em;
+}
+
+.form {
+  margin-left: 20%;
+  margin-top: 5em;
+  width: 100%;
+  height: 100%;
+}
+
+.formModif {
+  position: absolute;
+  margin-left: 40%;
+}

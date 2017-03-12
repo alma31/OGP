@@ -36,7 +36,9 @@
 					<div>{{$user->numrue}} {{$user->rue}}</div>
 					<div>{{$user->cp}} {{$user->ville}}</div>
 				</div>
-				<button class="fluid ui button">Modifier les Informations Personnelles</button>
+				<form action="/client/fiche/modif/{{$user->id}}" method="GET">
+					<button class="fluid ui button">Modifier les Informations Personnelles</button>
+				</form>
 			</div>
 			<div class="blok">
 				<div class="ui massive right floated segment">
