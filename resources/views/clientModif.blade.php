@@ -45,7 +45,7 @@
 			<!-- formulaire debut -->
 			<form id="form" class="ui center olive form" action="/" method="POST">
 				{{csrf_field()}}
-				<div class="two wide fields ">
+				<div class="two wide fields">
 					<div class="ten wide field">
 						<h2>Licence ffsnw</h2>
 						<select name="ffsnw" class="ui dropdown">
