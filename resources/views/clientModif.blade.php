@@ -89,9 +89,10 @@
 				<input id="locality" type="hidden" name="ville" placeholder="Ville" value="{{$user->ville}}">
 				<input id="country" type="hidden" name="pays" placeholder="Pays" value="{{$user->pays}}">
 				<!-- input caher pour heure restante/total -->
-				<input id="btn" type="submit" class="ui centered button" value="Ajouter">
 				<input type="hidden" name="nht" value="0">
 				<input type="hidden" name="nhr" value="0">
+				<!-- fin du cacher -->
+				<!-- <input id="btn" type="submit" class="ui centered button" value="Ajouter"> -->
 			</form>
 
 			<!-- formulaire fin -->
@@ -99,7 +100,7 @@
 	</div>
 </body>
 <script type="text/javascript" src="{{ mix('/js/app.js') }}"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBJCldPjURFNVUUxV4Chce_gx9FAHZqMlI">
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyADaLChrO-es9ZYDHcUC7kps7dC-JRnwCo">
 </script>
 <script src="/js/sweetalert.min.js"></script>
 </html>
