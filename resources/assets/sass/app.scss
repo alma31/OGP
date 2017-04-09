@@ -1,0 +1,105 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+body {
+background-color: #F8F8FF;
+margin: 0;
+}
+
+.ui.mini.menu {
+	padding : 0rem;
+}
+
+.ui.connect.center {
+	font-size : 20px;
+	padding : 20px;
+}
+
+.item.logout {
+	font-size : 20px;
+}
+
+.headerhr {
+
+width: 100%;
+background-color: #00838e;
+height:2%;
+margin-top: 1%;
+}
+
+.ui.center.aligned.header {
+
+text-align: center;
+}
+
+.negative.ui.button {
+
+margin-top: 2em;
+}
+
+
+.ui.card {
+margin-left: 4%;
+position: absolute;
+}
+
+.blok {
+
+height: 40%;
+width:40%;
+margin-left: 33%;
+padding: 1%;
+}
+
+.four.column.centered.row {
+position: absolute;
+left: 5%;
+bottom: 40%;
+}
+
+.ui.massive.right.floated.segment {
+
+height: 6.5em;
+}
+
+.nhr {
+position: relative;
+color: red;
+top: 0.8em;
+left: 4.4em;
+}
+
+.nht {
+position: relative;
+top: 0.5em;
+left: 3em;
+}
+
+.ffsnw {
+position: relative;
+top: 0.5em;
+left: 3em;
+}
+
+.positive.ui.button {
+position: relative;
+top: 2.5em;
+}
+
+.ui.center.olive.form.add {
+margin-left: 28%;
+margin-top : 3%;
+width: 75%;
+height: 75%;
+}
+
+.ui.center.olive.form {
+margin-left: 35%;
+width: 70%;
+height: 70%;
+
+}
