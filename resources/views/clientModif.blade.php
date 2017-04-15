@@ -30,7 +30,6 @@
 		<form action="/index" method="GET">
 			<input type="submit" class="ui button" value="Revenir a la liste">
 		</form>
-		<button id="btndelete" data-id="{{ $user->id }}" data-token="{{ csrf_token() }}" class="negative ui right floated button" value="supprimer">Supprimer ce compte</button>
 		<div class="headerhr"></div>
 	</div>
 	<div class="sixteen wide column">
@@ -58,14 +57,19 @@
 	</div>
 	<div class="sixteen wide column">
 		<!-- formulaire debut -->
-		<form id="form" class="ui center olive form" action="/" method="POST">
+		<form id="form" class="ui center olive form" action="/client/fiche/modif/{{$user->id}}" method="POST">
 			{{csrf_field()}}
 			<div class="two wide fields">
 				<div class="ten wide field">
 					<h2>Licence ffsnw</h2>
 					<select name="ffsnw" class="ui dropdown">
+						@if ($user->ffsnw == "Non")
 						<option value="Non">Non</option>
 						<option value="Oui">Oui</option>
+						@else 
+						<option value="Oui">Oui</option>
+						<option value="Non">Non</option>
+						@endif
 					</select>
 				</div>
 			</div>
@@ -81,10 +85,10 @@
 				</div>
 			</div>
 			<div class="one field">
-				<div class="ten wide field">
+				<!-- <div class="ten wide field">
 					<h2>Ajouter nouvelle adresse postale</h2>
-					<input id="user_input_autocomplete_address" type="text" name="Adresse" placeholder="Adresse complete" required="">
-				</div>
+					<input id="user_input_autocomplete_address" type="text" name="Adresse" placeholder="Adresse complete">
+				</div> -->
 				<div class="two wide fields">
 					<div class="two wide field">
 						<h2>N°</h2>
@@ -105,9 +109,9 @@
 			<input id="country" type="hidden" name="pays" placeholder="Pays" value="{{$user->pays}}">
 			<!-- input caher pour heure restante/total -->
 			<input type="hidden" name="nht" value="0">
-			<input type="hidden" name="nhr" value="0">
+			<input type="hidden" name="nhr" value="0">		
 			<!-- fin du cacher -->
-			<!-- <input id="btn" type="submit" class="ui centered button" value="Ajouter"> -->
+			<input id="btn" type="submit" class="ui centered button" value="Modifier information personnel">
 		</form>
 
 		<!-- formulaire fin -->

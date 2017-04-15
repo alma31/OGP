@@ -41,4 +41,17 @@ class ClientController extends Controller
 		return view ('clientModif', ['user' => $user]);
 	}
 
+	public function postClientModif(Request $request, $id){
+		$user = Client::find($request->id);
+		$user->ffsnw = $request->ffsnw;
+		$user->email = $request->email;
+		$user->tel = $request->tel;
+		$user->numrue = $request->numrue;
+		$user->rue = $request->rue;
+		$user->cp = $request->cp;
+		$user->ville = $request->ville;
+		$user->save();
+		return view ('client', ['user' => $user]);
+	}
+
 }

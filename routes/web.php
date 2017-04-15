@@ -22,4 +22,5 @@ Route::get('/add', 'ClientController@getAdd')->middleware('auth');
 Route::post('/index' , 'ClientController@postAdd')->middleware('auth');
 Route::get('/client/fiche/{id}', 'ClientController@getFiche')->middleware('auth');
 Route::get('/client/fiche/modif/{id}', 'ClientController@getClientModif')->middleware('auth');
+Route::post('/client/fiche/modif/{id}', 'ClientController@postClientModif')->middleware('auth');
 Route::post('/client/fiche/btndelete/{id}', 'ClientController@btndelete')->middleware('auth');
