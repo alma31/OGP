@@ -30,7 +30,6 @@
 		<form action="/index" method="GET">
 			<input type="submit" class="ui button" value="Revenir a la liste">
 		</form>
-		<button id="btndelete" data-id="{{ $user->id }}" data-token="{{ csrf_token() }}" class="negative ui right floated button" value="supprimer">Supprimer ce compte</button>
 		<div class="headerhr"></div>
 	</div>
 	<div class="sixteen wide column">
@@ -51,27 +50,26 @@
 				<div>{{$user->numrue}} {{$user->rue}}</div>
 				<div>{{$user->cp}} {{$user->ville}}</div>
 			</div>
-			<form action="/client/fiche/modif/{{$user->id}}" method="GET">
-				<button class="fluid ui button">Modifier les Informations Personnelles</button>
+			<form action="/client/fiche/{{$user->id}}" method="GET">
+				<button class="fluid ui button">Revenir sur la fiche client</button>
 			</form>
 		</div>
-		<div class="blok">
-			<div class="ui massive right floated segment">
-				HEURE RESTANTE
-				<div class="nhr">{{$user->nhr}}</div>
-				<button class="positive ui button">Payer une heure de wakeboard</button>
+		<div class="blok heure">
+			<div class="sixteen wide field">
+				<h2>Vous avez un choisi un forfait : <span id="choix"></span> <span id="heure"></span></h2>
+				<form action="/client/add/heure/{{$user->id}}" method="POST">
+					{{ csrf_field() }}
+					<select id="choix1" name="nht" class="ui dropdown">
+						<option value="0">Choisir un forfait</option>
+						<option value="1">Forfait 1 heure 17,00€</option>
+						<option value="2">Forfait 2 heures 31,00€</option>
+						<option value="10">Forfait 10 heures 150,00€</option>
+						<option value="20">Forfait 20 heures 250,00€</option>
+						<option value="30">Forfait 30 heures 330,00€</option>
+					</select>
+					<input id="disabled" disabled="disabled" type="submit" class="ui button" value="Acheter">
+				</form>
 			</div>
-			<div class="ui left floated segment">
-				HEURE TOTALE
-				<div class="nht">{{$user->nht}}</div>
-			</div>
-			<div class="ui massive floated segment">
-				LICENCE FFSNW
-				<div class="ffsnw">{{$user->ffsnw}}</div>
-			</div>
-			<form action="/client/add/heure/{{$user->id}}">
-				<button class="fluid ui button">Acheter des heures de wakeboard</button>
-			</form>
 		</div>
 	</div>
 </div>

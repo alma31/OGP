@@ -54,4 +54,19 @@ class ClientController extends Controller
 		return view ('client', ['user' => $user]);
 	}
 
+	public function getClientAddHeure($id){
+		$user = Client::find($id);
+		return view('clientAddHeure', ['user' => $user]);
+	}
+
+	public function postClientModifHeure(Request $request, $id){
+
+		$user = Client::find($request->id);
+		$nht = $request->nht;
+		$user->increment('nht', $nht);
+		$user->increment('nhr', $nht);
+		$user->save();
+		return view('client', ['user' => $user]);
+	}
+
 }

@@ -24,8 +24,8 @@ class CreateClientsTable extends Migration
             $table->string('email')->unique();
             $table->string('tel');
             $table->string('ffsnw');
-            $table->integer('nht');
-            $table->integer('nhr');
+            $table->string('nht');
+            $table->string('nhr');
             $table->timestamps();
         });
     }

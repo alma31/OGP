@@ -102,11 +102,47 @@ function onPlaceChanged() {
 }
 
 $(document).ready(function () {
+	$("#choix1").change(function () {
+		var choix = $('#choix1').val();
+		if (choix == 1) {
+			$('#choix').html("1");
+			$('#disabled').removeAttr("disabled");
+			$('#heure').html("heure");
+		}
+		if (choix == 2) {
+			$('#choix').html("2");
+			$('#disabled').removeAttr("disabled");
+			$('#heure').html("heures");
+		}
+		if (choix == 10) {
+			$('#choix').html("10");
+			$('#disabled').removeAttr("disabled");
+			$('#heure').html("heures");
+		}
+		if (choix == 20) {
+			$('#choix').html("20");
+			$('#disabled').removeAttr("disabled");
+			$('#heure').html("heures");
+		}
+		if (choix == 30) {
+			$('#choix').html("30");
+			$('#disabled').removeAttr("disabled");
+			$('#heure').html("heures");
+		}
+
+		if (choix == "") {
+			$('#heure').html("aucune");
+			$("#disabled").attr('disabled', "disabled");
+			$('#choix').html(" ");
+		}
+	});
+
 	$.ajaxSetup({
 		headers: {
 			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 		}
 	});
+
 	$('#btndelete').click(function (e) {
 		var id = $(this).data("id");
 		var token = $(this).data("token");
