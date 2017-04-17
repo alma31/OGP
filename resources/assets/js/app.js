@@ -28,7 +28,6 @@ function onPlaceChanged() {
 }
 }
 
-
 $(document).ready(function(){
 	$("#choix1").change(function() {
 		var choix = $('#choix1').val();
@@ -101,6 +100,7 @@ $(document).ready(function(){
 						swal("Suppression ok", "compte supprimer", "success");
 						$('.confirm').click(function(){
 							window.location.replace("/index")
+
 						});
 
 					}
