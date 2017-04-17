@@ -130,8 +130,8 @@ $(document).ready(function () {
 			$('#heure').html("heures");
 		}
 
-		if (choix == "") {
-			$('#heure').html("aucune");
+		if (choix == "0") {
+			$('#heure').html("aucun");
 			$("#disabled").attr('disabled', "disabled");
 			$('#choix').html(" ");
 		}
