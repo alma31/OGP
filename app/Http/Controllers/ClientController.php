@@ -69,4 +69,10 @@ class ClientController extends Controller
 		return view('client', ['user' => $user]);
 	}
 
+	public function heuremoins($id){
+		$user = Client::find($id);
+		$user->nhr--;
+		$user->save();
+	}
+
 }

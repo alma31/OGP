@@ -59,7 +59,7 @@
 			<div class="ui massive right floated segment">
 				HEURE RESTANTE
 				<div class="nhr">{{$user->nhr}}</div>
-				<button class="positive ui button">Payer une heure de wakeboard</button>
+				<button id="btnnhr" data-id="{{ $user->id }}" class="positive ui button" data-token="{{ csrf_token() }}">Payer une heure de wakeboard</button>
 			</div>
 			<div class="ui left floated segment">
 				HEURE TOTALE

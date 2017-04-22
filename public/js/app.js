@@ -143,6 +143,24 @@ $(document).ready(function () {
 		}
 	});
 
+	$('#btnnhr').click(function (e) {
+		var id = $(this).data("id");
+		var token = $(this).data("token");
+		e.preventDefault();
+		$.ajax({
+			url: "btnnhr/" + id,
+			type: "POST",
+			data: {
+				"id": id,
+				"_method": 'POST',
+				"_token": token
+			},
+			success: function success() {
+				window.location.reload();
+			}
+		});
+	});
+
 	$('#btndelete').click(function (e) {
 		var id = $(this).data("id");
 		var token = $(this).data("token");
