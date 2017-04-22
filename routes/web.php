@@ -12,13 +12,10 @@
 */
 
 
-Route::get('/', function () {
-	return view('/auth/login');
-});
 
 Auth::routes();
 
-Route::get('/index', 'ClientController@getUsers')->middleware('auth');
+Route::get('/', 'ClientController@getUsers')->middleware('auth');
 Route::get('/add', 'ClientController@getAdd')->middleware('auth');
 Route::post('/index' , 'ClientController@postAdd')->middleware('auth');
 Route::get('/client/fiche/{id}', 'ClientController@getFiche')->middleware('auth');
