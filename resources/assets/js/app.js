@@ -76,19 +76,43 @@ $(document).ready(function(){
 		var id = $(this).data("id");
 		var token = $(this).data("token");
 		e.preventDefault();
-		$.ajax({
-			url : "btnnhr/"+id,
-			type : "POST",
-			data: {
-				"id": id,
-				"_method": 'POST',
-				"_token": token,
-			},
-			success : function(){
-				window.location.reload();
-			}
+		swal({
+			title: "Acheter 1 heure de Wake Board",
+			text: "1 HEURE",
+			showCancelButton: true,
+			closeOnConfirm: false,
+			showLoaderOnConfirm: true,
+		},
+		function(){
+			$.ajax({
+				url : "btnnhr/"+id,
+				type : "POST",
+				data: {
+					"id": id,
+					"_method": 'POST',
+					"_token": token,
+				},
+				success : function(){
+					setTimeout(function(){
+						window.location.replace("/client/fiche/"+id);
+					}, 1300);	
+				}
+			});
+
 		});
+		
 	});
+
+
+
+
+
+
+
+
+
+
+
 
 	$('#btndelete').click(function(e){
 		var id = $(this).data("id");
