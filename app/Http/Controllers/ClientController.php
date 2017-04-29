@@ -51,7 +51,7 @@ class ClientController extends Controller
 		$user->cp = $request->cp;
 		$user->ville = $request->ville;
 		$user->save();
-		return view ('client', ['user' => $user]);
+		return redirect()->action('ClientController@getFiche', $id);
 	}
 
 	public function getClientAddHeure($id){
@@ -66,7 +66,7 @@ class ClientController extends Controller
 		$user->increment('nht', $nht);
 		$user->increment('nhr', $nht);
 		$user->save();
-		return view('client', ['user' => $user]);
+		return redirect()->action('ClientController@getFiche', $id);
 	}
 
 	public function heuremoins($id){

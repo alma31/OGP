@@ -57,7 +57,7 @@
 		<div class="blok heure">
 			<div class="sixteen wide field">
 				<h2>Vous avez un choisi un forfait : <span id="choix"></span> <span id="heure"></span></h2>
-				<form action="/client/add/heure/{{$user->id}}" method="POST">
+				<form action="/client/fiche/{{$user->id}}" method="POST">
 					{{ csrf_field() }}
 					<select id="choix1" name="nht" class="ui dropdown">
 						<option value="0">Choisir un forfait</option>
