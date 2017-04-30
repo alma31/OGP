@@ -21,12 +21,12 @@ class CreateClientsTable extends Migration
             $table->string('rue');
             $table->string('cp');
             $table->string('ville');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('tel');
             $table->string('ffsnw');
             $table->string('nht');
             $table->string('nhr');
-            $table->timestamps();
+            $table->timestamps('date');
         });
     }
     /**
