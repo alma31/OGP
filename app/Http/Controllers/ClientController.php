@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Client;
+use DateTime;
+
 
 
 class ClientController extends Controller
@@ -28,7 +30,12 @@ class ClientController extends Controller
 
 	public function getFiche($id){
 		$user = Client::find($id);
-		return view ('client', ['user' => $user]);
+		$age = $user->age;
+		$birthDate = $age;
+		$birthDate = $age;
+		$birthDate = explode("-", $birthDate);
+		$age = (date("md", date("U", mktime(0, 0, 0, $birthDate[2], $birthDate[1], $birthDate[0]))) > date("md") ? ((date("Y")-$birthDate[0])-1):(date("Y")-$birthDate[0]));
+		return view ('client', ['user' => $user, 'age' => $age]);
 	}
 
 	public function btndelete(Request $request, $id){

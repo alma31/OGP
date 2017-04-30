@@ -103,17 +103,6 @@ $(document).ready(function(){
 		
 	});
 
-
-
-
-
-
-
-
-
-
-
-
 	$('#btndelete').click(function(e){
 		var id = $(this).data("id");
 		var token = $(this).data("token");
@@ -160,8 +149,3 @@ $(document).ready(function(){
 google.maps.event.addDomListener(window, 'load', function() {
 	initializeAutocomplete('user_input_autocomplete_address');
 });
-
-
-
-
-

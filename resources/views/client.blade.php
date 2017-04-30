@@ -46,7 +46,7 @@
 				<strong>Information personnel</strong>
 				<div>Nom : {{$user->nom}}</div>
 				<div>Prenom : {{$user->prenom}}</div>
-				<div>Age : {{$user->age}} ans</div>
+				<div>Age : {{$age}} ans</div>
 				<strong>Adresse</strong>
 				<div>{{$user->numrue}} {{$user->rue}}</div>
 				<div>{{$user->cp}} {{$user->ville}}</div>
