@@ -97,7 +97,6 @@
 			</div>
 		</div>
 		<!-- input de type cacher pour google -->
-		<input type="hidden" name="date" value="">
 		<input id="locality" type="hidden" name="ville" placeholder="Ville">
 		<input id="country" type="hidden" name="pays" placeholder="Pays">
 		<!-- input caher pour heure restante/total -->

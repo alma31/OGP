@@ -10,7 +10,4 @@ class Client extends Model
     protected $fillable = [
     'nom', 'prenom', 'age', 'sexe', 'numrue', 'rue', 'cp','ville','email','tel', 'ffsnw', 'nht','nhr'];
 
-    public $timestamps = false;
-
-
 }
