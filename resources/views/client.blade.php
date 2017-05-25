@@ -27,6 +27,7 @@
 			</div>
 		</div>
 		<h1 class="ui center aligned header">Fiche client de {{$user->prenom}}  {{$user->nom}}</h1>
+		<h3 class="ui center aligned header" >Compte créer le {{$user->created_at}}</h3>
 		<form action="/index" method="GET">
 			<input type="submit" class="ui button" value="Revenir a la liste">
 		</form>
